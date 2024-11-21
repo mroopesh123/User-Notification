@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                          // Set the target to ES2020 for modern JavaScript
+      "module": "commonjs",                        // Use CommonJS modules (standard for Node.js)
+      "moduleResolution": "node",                  // Use Node.js module resolution strategy
+      "strict": true,                              // Enable all strict type-checking options
+      "esModuleInterop": true,                     // Enable compatibility with ES6-style imports
+      "skipLibCheck": true,                        // Skip type checking of declaration files for faster build
+      "forceConsistentCasingInFileNames": true,    // Ensure consistent casing of file names
+      "outDir": "./dist",                          // The directory where the compiled code will go
+      "baseUrl": "./src",                          // Base directory for non-relative imports
+      "paths": {
+        "@/*": ["src/*"]                           // Enable absolute imports from the `src` directory
+      }
+    },
+    "include": [
+      "src/**/*"                                  // Include all TypeScript files in the `src` folder
+    ],
+    "exclude": [
+      "node_modules",                             // Exclude node_modules folder
+      "dist"                                      // Exclude dist folder
+    ]
+  }
+  
